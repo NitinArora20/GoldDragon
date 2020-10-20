@@ -5,7 +5,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 const command = require('./command')
-const config = require('./config.json')
+//const config = require('./config.json')
 const roleClaim = require('./role-claim')
 const roleClaim2 = require('./role-claim2')
 const welcome = require('./welcome')
@@ -34,4 +34,4 @@ client.on('ready', () => {
 
 
 
-client.login(config.token)
+client.login(process.env.DJS_TOKEN)
